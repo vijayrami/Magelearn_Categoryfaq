@@ -1,4 +1,4 @@
-# Mage2 Module Magelearn Categoryfaq
+# Magelearn Categoryfaq
 
     ``magelearn/module-categoryfaq``
 
