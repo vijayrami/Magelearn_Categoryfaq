@@ -1,0 +1,14 @@
+type Query { 
+    faq  : Faq @resolver( class: "Magelearn\\Categoryfaq\\Model\\Resolver\\Faq") @doc(description: "Query by Get FAQ List By Category.") 
+}
+type Faq @doc(description: "Faq defines the FAQ information") {
+    allFaqs : [FaqRecord] @doc(description: "FAQ records with info")
+}
+type FaqRecord {
+    id: Int @doc(description: "Get FAQ ID")
+    title: String @doc(description: "Get FAQ title")
+    answer: String @doc(description: "Get FAQ answer")
+    status: Int @doc(description: "Get FAQ status")
+    categoryName: String @doc(description: "Get FAQ Category")
+}
+

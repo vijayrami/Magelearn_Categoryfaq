@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Magelearn_Categoryfaq::management" title="FAQ" module="Magelearn_Categoryfaq" parent="Magento_Backend::content" sortOrder="30" resource="Magelearn_Categoryfaq::management"/>
+		
+		<add id="Magelearn_Categoryfaq::magelearn_categoryfaq_category" title="Categories" module="Magelearn_Categoryfaq" sortOrder="9999" resource="Magento_Backend::content" parent="Magelearn_Categoryfaq::management" action="magelearn_categoryfaq/category/index"/>
+		<add id="Magelearn_Categoryfaq::magelearn_categoryfaq_question" title="Questions" module="Magelearn_Categoryfaq" sortOrder="9999" resource="Magento_Backend::content" parent="Magelearn_Categoryfaq::management" action="magelearn_categoryfaq/question/index"/>
+		
+		<add id="Magelearn_Categoryfaq::faq_management" title="FAQ Management" translate="title" module="Magelearn_Categoryfaq" sortOrder="30"
+             parent="Magento_Backend::content" resource="Magento_Backend::design"/>
+	</menu>
+</config>
