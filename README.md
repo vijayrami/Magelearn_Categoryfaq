@@ -15,7 +15,7 @@ Magento 2 Category FAQ Extension
 - Manage FAQs (Add, Edit, Delete, Status [Enable/Disable])
 - Assign Categories to FAQs.
 - Display FAQs Categorywise on Frontend.
-
+- Also provided GraphQL Endpoints to check the FAQ listing data with GraphQL
 
 ## Installation
 \* = in production please use the `--keep-generated` option
@@ -31,15 +31,13 @@ Magento 2 Category FAQ Extension
 
 ## Configuration
 
+[![Dashboard-Magento-Admin.png](https://i.postimg.cc/MT3252j4/Dashboard-Magento-Admin.png)](https://postimg.cc/9R9nXkbt)
 
+[![FAQ-Categories-FAQ-Categories.png](https://i.postimg.cc/mk1qSc4z/FAQ-Categories-FAQ-Categories.png)](https://postimg.cc/ctZXxLr0)
 
+[![New-Category-Categorys-Magento-Admin.png](https://i.postimg.cc/VLq1yTyS/New-Category-Categorys-Magento-Admin.png)](https://postimg.cc/BXnRHmns)
 
-## Specifications
+[![Screenshot-from-2022-05-02-19-11-47.png](https://i.postimg.cc/j5n0M3QS/Screenshot-from-2022-05-02-19-11-47.png)](https://postimg.cc/PpHRx4Rg)
 
-
-
-
-## Attributes
-
-
+[![Screenshot-from-2022-05-02-19-13-26.png](https://i.postimg.cc/mgLvvgNq/Screenshot-from-2022-05-02-19-13-26.png)](https://postimg.cc/0b4Xmx4d)
 
