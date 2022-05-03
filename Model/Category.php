@@ -8,11 +8,31 @@ declare(strict_types=1);
 namespace Magelearn\Categoryfaq\Model;
 
 use Magelearn\Categoryfaq\Api\Data\CategoryInterface;
+use Magento\Framework\Data\Collection\AbstractDb;
 use Magento\Framework\Model\AbstractModel;
+use Magento\Framework\Model\Context;
+use Magento\Framework\Model\ResourceModel\AbstractResource;
+use Magento\Framework\Registry;
+use Magento\Framework\Stdlib\DateTime\DateTimeFactory;
 
 class Category extends AbstractModel implements CategoryInterface
 {
-
+    /**
+     * @var DateTimeFactory
+     */
+    private $dateTimeFactory;
+    
+    public function __construct(
+        Context $context,
+        Registry $registry,
+        DateTimeFactory $dateTimeFactory,
+        AbstractResource $resource = null,
+        AbstractDb $resourceCollection = null,
+        array $data = []
+        ) {
+            parent::__construct($context, $registry, $resource, $resourceCollection, $data);
+            $this->dateTimeFactory = $dateTimeFactory;
+    }
     /**
      * @inheritDoc
      */
@@ -132,5 +152,17 @@ class Category extends AbstractModel implements CategoryInterface
     {
         return $this->setData(self::UPDATED_AT, $updatedAt);
     }
+    /**
+     * Set updated_at before saving
+     *
+     * @return AbstractModel
+     */
+    public function beforeSave()
+    {
+        if ($this->getId()) {
+            $this->setUpdatedAt($this->dateTimeFactory->create()->gmtDate());
+        }
+        
+        return parent::beforeSave();
+    }
 }
-
