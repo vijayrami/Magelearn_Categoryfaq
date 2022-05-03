@@ -64,7 +64,7 @@ class Topmenu
     {
         return [
             'name' => __('FAQ'),
-            'id'   => 'prestafy-faq',
+            'id'   => 'magelearn-faq',
             'url'  => $this->urlBuilder->getUrl('faq'),
             'has_active' => false
         ];
