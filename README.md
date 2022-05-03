@@ -29,6 +29,19 @@ Magento 2 Category FAQ Extension
  - Static content deploy `php bin/magento setup:s:d`\*
  - Flush the cache by running `php bin/magento cache:clean` and `php bin/magento cache:flush` 
 
+### GraphQL Query
+{
+  faq {
+    allFaqs {
+      id
+      title
+      answer
+      status
+      categoryName
+    }
+  }
+}
+
 ## Configuration
 
 [![Dashboard-Magento-Admin.png](https://i.postimg.cc/MT3252j4/Dashboard-Magento-Admin.png)](https://postimg.cc/9R9nXkbt)
