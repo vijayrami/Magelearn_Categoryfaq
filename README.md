@@ -30,6 +30,7 @@ Magento 2 Category FAQ Extension
  - Flush the cache by running `php bin/magento cache:clean` and `php bin/magento cache:flush` 
 
 ### GraphQL Query
+<pre>
 {
   faq {
     allFaqs {
@@ -41,6 +42,7 @@ Magento 2 Category FAQ Extension
     }
   }
 }
+</pre>
 
 ## Configuration
 
