@@ -76,12 +76,14 @@
 				</validation>
 			</settings>
 		</field>
-		<field name="answer" formElement="wysiwyg" sortOrder="100">
+		<field name="answer" template="ui/form/field" formElement="wysiwyg" sortOrder="100">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
 					<item name="source" xsi:type="string">question</item>
 					<item name="wysiwygConfigData" xsi:type="array">
-                        <item name="height" xsi:type="string">100px</item>
+						<item name="is_pagebuilder_enabled" xsi:type="boolean">false</item>
+						<item name="toggle_button" xsi:type="boolean">true</item>
+                        <item name="height" xsi:type="string">200px</item>
                         <item name="add_variables" xsi:type="boolean">true</item>
                         <item name="add_widgets" xsi:type="boolean">true</item>
                         <item name="add_images" xsi:type="boolean">true</item>
@@ -97,7 +99,7 @@
 			<formElements>
                 <wysiwyg>
                     <settings>
-                        <rows>8</rows>
+                        <rows>6</rows>
                         <wysiwyg>true</wysiwyg>
                     </settings>
                 </wysiwyg>
