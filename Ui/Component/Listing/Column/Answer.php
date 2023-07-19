@@ -28,7 +28,9 @@ class Answer extends Column
     {
         if (isset($dataSource['data']['items'])) {
             foreach ($dataSource['data']['items'] as & $item) {
-                $item[$this->getData('answer')] = html_entity_decode(nl2br($item['answer']));
+                if(isset($item['answer']) && !empty($item['answer'])) {
+                    $item[$this->getData('answer')] = html_entity_decode(nl2br($item['answer']));
+                } 
             }
         }
         return $dataSource;
