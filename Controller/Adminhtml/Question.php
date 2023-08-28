@@ -11,7 +11,7 @@ abstract class Question extends \Magento\Backend\App\Action
 {
 
     protected $_coreRegistry;
-    const ADMIN_RESOURCE = 'Magelearn_Categoryfaq::top_level';
+    const ADMIN_RESOURCE = 'Magelearn_Categoryfaq::management';
 
     /**
      * @param \Magento\Backend\App\Action\Context $context

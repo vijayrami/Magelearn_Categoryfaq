@@ -10,7 +10,7 @@ namespace Magelearn\Categoryfaq\Controller\Adminhtml;
 abstract class Category extends \Magento\Backend\App\Action
 {
 
-    const ADMIN_RESOURCE = 'Magelearn_Categoryfaq::top_level';
+    const ADMIN_RESOURCE = 'Magelearn_Categoryfaq::management';
     protected $_coreRegistry;
 
     /**

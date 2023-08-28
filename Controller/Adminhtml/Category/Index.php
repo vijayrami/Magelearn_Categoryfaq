@@ -34,6 +34,7 @@ class Index extends \Magento\Backend\App\Action
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();
+        $resultPage->setActiveMenu('Magelearn_Categoryfaq::magelearn_categoryfaq_category');
             $resultPage->getConfig()->getTitle()->prepend(__("FAQ Categories"));
             return $resultPage;
     }
